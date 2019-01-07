@@ -10,25 +10,25 @@
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [BASE] = LAYOUT_ergodox(
         // left hand
-        KC_GRV,          KC_1,           KC_2,     KC_3,    KC_4,            KC_5,   KC_PLUS,
+        KC_GRV,          KC_1,           KC_2,     KC_3,    KC_4,            KC_5,   KC_EQUAL,
         KC_DELT,         KC_Q,           KC_W,     KC_F,    KC_P,            KC_G,   TG(QWER),
         LGUI_T(KC_ESC),  LT(MDIA, KC_A), KC_R,     KC_S,    LT(MOUS, KC_T),  KC_D,
         LSFT_T(KC_LBRC), CTL_T(KC_Z),    KC_X,     KC_C,    KC_V,            KC_B,   TG(MOUS),
-        KC_CUT         , KC_COPY,        KC_PASTE, KC_LEFT, LALT_T(KC_UP),
+        KC_CUT         , KC_COPY,        KC_PASTE, KC_LEFT, KC_UP,
 
-                                                  KC_NO,        KC_NO,
+                                                 KC_NO,         KC_NO,
                                                                 KC_HOME,
-                                         KC_BSPC, MEH_T(KC_TAB),KC_PGUP,
+                                        KC_BSPC, LALT_T(KC_TAB),KC_PGUP,
         // right hand
              KC_MINS,     KC_6,   KC_7,             KC_8,     KC_9,   KC_0,             KC_MINS,
              TG(QWER),    KC_J,   KC_L,             KC_U,     KC_Y,   KC_SCLN,          KC_BSLASH,
                           KC_H,   LT(MOUS, KC_N),   KC_E,     KC_I,   LT(MDIA, KC_O),   RGUI_T(KC_QUOT),
              TG(MOUS),    KC_K,   KC_M,             KC_COMM,  KC_DOT, CTL_T(KC_SLSH),   RSFT_T(KC_RBRC),
-                                  RALT_T(KC_DOWN),  KC_RIGHT, KC_NO,  KC_NO,            RESET,
+                                  KC_DOWN,          KC_RIGHT, KC_NO,  KC_NO,            RESET,
 
              KC_NO,  KC_NO,
              KC_END,
-             KC_PGDN,MEH_T(KC_ENT),KC_SPC
+             KC_PGDN,RALT_T(KC_ENT),KC_SPC
     ),
 // QWERTY
 [QWER] = LAYOUT_ergodox(
